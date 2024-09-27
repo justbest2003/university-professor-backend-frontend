@@ -7,10 +7,11 @@ const professorRouter = require("./routers/professor.router");
 const authRouter = require("./routers/auth.router");
 const db = require("./models/"); // index
 const role = db.Role;
-const cors = require("cors");
 
+const frontend_url = process.env.FRONTEND_URL;
+const cors = require("cors");
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: frontend_url,
 };
 
 // Dev Mode
