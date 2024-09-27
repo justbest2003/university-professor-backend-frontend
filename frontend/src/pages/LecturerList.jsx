@@ -113,7 +113,7 @@ const LecturerList = () => {
             {groupedProfessors[department].map((professor) => (
               <div className="text-center" key={professor.id}>
                 <img
-                  className="w-52 h-52 rounded-full mx-auto object-cover shadow-2xl"
+                  className="w-48 h-48 rounded-full mx-auto object-cover shadow-2xl"
                   src={professor.imageUrl}
                   alt={professor.name}
                 />
